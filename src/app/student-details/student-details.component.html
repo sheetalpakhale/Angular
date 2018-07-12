@@ -1,0 +1,13 @@
+<body>
+  
+<h2>Students List</h2>
+<ul class="studentList">
+  <li *ngFor="let student of studentList" (click)="Students(student)">
+    <span class="badge">{{student.id}}</span> {{student.name}}
+  </li>
+</ul>
+
+<div id="registeredCourses" *ngFor="let item of regcourses">
+  <h3>{{item}}</h3>
+</div>
+</body>
